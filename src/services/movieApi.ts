@@ -23,11 +23,13 @@ export const movieApi = createApi({
     }),
 
     getMovieDetails: builder.query<MovieDetails, number>({
-      query: (id) => `movie/${id}?language=tr&append_to_response=credits,videos`,
+      query: (id) =>
+        `movie/${id}?language=tr&append_to_response=credits,videos`,
     }),
 
     getMovieById: builder.query<MovieDetails, number>({
-      query: (id) => `movie/${id}?language=tr&append_to_response=credits,videos`,
+      query: (id) =>
+        `movie/${id}?language=tr&append_to_response=credits,videos`,
     }),
   }),
 });
